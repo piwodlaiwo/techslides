@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Use Gen AI to Organize Your Life — TechSlides</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['DM Serif Display', 'Georgia', 'serif'],
+            sans: ['DM Sans', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-stone-50 text-stone-800 min-h-screen" style="font-family:'DM Sans',system-ui,sans-serif;">
+
+  <nav class="border-b border-stone-200 px-6 py-4">
+    <div class="max-w-2xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="text-sm font-medium tracking-tight text-stone-800 hover:text-stone-500 transition-colors">TechSlides</a>
+        <span class="text-stone-300 text-xs">|</span>
+        <span class="text-sm text-stone-500">AI Use Cases and Examples</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-xs text-stone-400 uppercase tracking-widest hidden sm:block">Share</span>
+        <a href="https://twitter.com/intent/tweet?text=How%20to%20Use%20Gen%20AI%20to%20Organize%20Your%20Life&url=https%3A%2F%2Ftechslides.com%2Fposts%2Fpersonal-support%2Forganizing-life" target="_blank" rel="noopener" class="text-stone-400 hover:text-stone-700 transition-colors" aria-label="Share on X">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftechslides.com%2Fposts%2Fpersonal-support%2Forganizing-life" target="_blank" rel="noopener" class="text-stone-400 hover:text-stone-700 transition-colors" aria-label="Share on LinkedIn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://www.reddit.com/submit?url=https%3A%2F%2Ftechslides.com%2Fposts%2Fpersonal-support%2Forganizing-life&title=How%20to%20Use%20Gen%20AI%20to%20Organize%20Your%20Life" target="_blank" rel="noopener" class="text-stone-400 hover:text-stone-700 transition-colors" aria-label="Share on Reddit">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftechslides.com%2Fposts%2Fpersonal-support%2Forganizing-life" target="_blank" rel="noopener" class="text-stone-400 hover:text-stone-700 transition-colors" aria-label="Share on Facebook">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <button onclick="navigator.clipboard.writeText(window.location.href).then(()=>{const t=this.querySelector('span');t.classList.remove('opacity-0');setTimeout(()=>t.classList.add('opacity-0'),2000)})" class="text-stone-400 hover:text-stone-700 transition-colors relative" aria-label="Copy link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <span class="absolute -top-8 left-1/2 -translate-x-1/2 bg-stone-800 text-white text-xs px-2 py-1 rounded opacity-0 pointer-events-none transition-opacity whitespace-nowrap">Copied!</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-2xl mx-auto px-6 py-20">
+    <a href="./" class="text-xs uppercase tracking-widest text-stone-400 hover:text-stone-700 transition-colors mb-10 inline-block">← Personal Support &amp; Wellbeing</a>
+    <p class="text-xs uppercase tracking-widest text-stone-400 mb-4">Productivity · Planning · Daily habits</p>
+    <h1 class="text-4xl leading-tight mb-10" style="font-family:'DM Serif Display',Georgia,serif;">How to Use Gen AI to Organize Your Life</h1>
+    <div class="w-12 h-px bg-stone-300 mb-10"></div>
+    <p class="text-lg text-stone-600 leading-relaxed">If your to-do list is a mess and your brain feels like seventeen browser tabs, AI can act as the patient, endlessly available organizer you&#39;ve always wished you had. People are prompting AI to help them build cleaning schedules before guests arrive, create weekly routines, prioritize goals, and break overwhelming projects into manageable steps. The trick is to be specific: instead of asking &#34;help me get organized,&#34; try &#34;I have a cluttered home office, a work deadline on Friday, and a family event Saturday — help me plan my next four days hour by hour.&#34; The more context you give, the more useful the output, and most people find that even an imperfect AI-generated plan is enough to break paralysis and get moving.</p>
+
+    <!-- Prompts section -->
+    <div class="mt-16">
+      <div class="w-12 h-px bg-stone-300 mb-10"></div>
+      <h2 class="text-2xl mb-2" style="font-family:'DM Serif Display',Georgia,serif;">5 Best Prompts for Organizing Your Life to Ask Claude or ChatGPT</h2>
+      <p class="text-sm text-stone-400 mb-10">Copy any prompt below and paste it directly into your AI of choice.</p>
+      <ol class="space-y-6">
+        <li class="border border-stone-200 rounded-lg p-6 bg-white">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-3">Prompt 01 · Weekly planning</p>
+          <p class="text-stone-700 leading-relaxed text-sm font-mono bg-stone-50 rounded p-4 select-all">"It's Sunday evening. Here's everything I need to get done this week: [list tasks]. I also have these fixed commitments: [list]. Can you build me a realistic day-by-day plan that batches similar tasks, protects focus time, and includes buffer for unexpected things?"</p>
+          <p class="text-xs text-stone-400 mt-3">Best for: starting the week with a clear, structured plan instead of a vague to-do list.</p>
+        </li>
+        <li class="border border-stone-200 rounded-lg p-6 bg-white">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-3">Prompt 02 · Brain dump to action list</p>
+          <p class="text-stone-700 leading-relaxed text-sm font-mono bg-stone-50 rounded p-4 select-all">"I'm going to dump everything that's on my mind right now — work tasks, personal errands, worries, ideas, and anything else: [dump everything]. Can you sort this into categories, identify what's urgent vs important, and give me a prioritized action list?"</p>
+          <p class="text-xs text-stone-400 mt-3">Best for: clearing mental clutter and turning chaos into something actionable.</p>
+        </li>
+        <li class="border border-stone-200 rounded-lg p-6 bg-white">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-3">Prompt 03 · Building a routine</p>
+          <p class="text-stone-700 leading-relaxed text-sm font-mono bg-stone-50 rounded p-4 select-all">"I want to build a morning routine that sets me up well for the day. I have about [X] minutes before I need to leave/start work. My goals are [e.g. more energy, less stress, feel prepared]. What would you suggest and why?"</p>
+          <p class="text-xs text-stone-400 mt-3">Best for: designing a sustainable routine grounded in your actual schedule and goals.</p>
+        </li>
+        <li class="border border-stone-200 rounded-lg p-6 bg-white">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-3">Prompt 04 · Tackling an overwhelming project</p>
+          <p class="text-stone-700 leading-relaxed text-sm font-mono bg-stone-50 rounded p-4 select-all">"I have a big project that feels overwhelming: [describe it]. I keep avoiding it. Can you break it into the smallest possible steps so that each one feels easy to start, and suggest an order that builds momentum?"</p>
+          <p class="text-xs text-stone-400 mt-3">Best for: breaking paralysis on a project you've been putting off.</p>
+        </li>
+        <li class="border border-stone-200 rounded-lg p-6 bg-white">
+          <p class="text-xs uppercase tracking-widest text-stone-400 mb-3">Prompt 05 · Monthly life audit</p>
+          <p class="text-stone-700 leading-relaxed text-sm font-mono bg-stone-50 rounded p-4 select-all">"I want to do a quick audit of my life across these areas: work, health, relationships, finances, and personal growth. Can you ask me a series of questions — one area at a time — to help me figure out what's going well, what needs attention, and what one thing I should focus on this month?"</p>
+          <p class="text-xs text-stone-400 mt-3">Best for: monthly check-ins to make sure you're moving in the right direction across all areas of life.</p>
+        </li>
+      </ol>
+    </div>
+  </main>
+
+  <footer class="border-t border-stone-200 px-6 py-10 mt-20">
+    <div class="max-w-2xl mx-auto flex items-center justify-between">
+      
+      <a href="./" class="text-xs uppercase tracking-widest text-stone-400 hover:text-stone-700 transition-colors">← Back</a>
+    </div>
+  </footer>
+
+</body>
+</html>
